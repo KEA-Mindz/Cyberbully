@@ -3,17 +3,16 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cyberbully"
+name = "kea-cyberbully"
 version = "0.1.0"
+
 description = "Production-grade cyberbullying detection powered by transformer classifiers and nuance-aware multi-task learning."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
 keywords = ["cyberbullying", "nlp", "transformers", "pytorch", "toxicity", "moderation", "deep-learning"]
 authors = [
-    { name = "Praveen" },
-    { name = "Maalolan"},
-    { name = "Mukesh"}
+    { name = "KEA MINDZ" }
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -50,10 +49,13 @@ dev = [
 
 [project.scripts]
 cyberbully = "cyberbully.cli:main"
+kea-cyberbully = "cyberbully.cli:main"
+
 
 [project.urls]
-Homepage = "https://github.com/maal0lan/cyberbully"
-Repository = "https://github.com/maal0lan/cyberbully"
+Homepage = "https://github.com/KEA-Mindz/Cyberbully"
+Repository = "https://github.com/KEA-Mindz/Cyberbully"
+
 
 [tool.setuptools.packages.find]
 where = ["src"]

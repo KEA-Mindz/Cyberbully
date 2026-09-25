@@ -1,6 +1,6 @@
 # Cyberbully
 
-[![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/cyberbully/)
+[![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/kea-cyberbully/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-orange.svg)](https://huggingface.co/)
@@ -23,11 +23,17 @@ Designed for social media moderation, chat moderation, comment screening, and tr
 
 ## Installation
 
+### From PyPI
+
+```bash
+pip install kea-cyberbully
+```
+
 ### From Source / Development
 
 ```bash
-git clone https://github.com/maal0lan/cyberbully.git
-cd cyberbully
+git clone https://github.com/KEA-Mindz/Cyberbully.git
+cd Cyberbully
 pip install -e .
 ```
 
