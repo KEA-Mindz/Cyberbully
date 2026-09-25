@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyberbully"
+version = "0.1.0"
+description = "Production-grade cyberbullying detection powered by transformer classifiers and nuance-aware multi-task learning."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["cyberbullying", "nlp", "transformers", "pytorch", "toxicity", "moderation", "deep-learning"]
+authors = [
+    { name = "Praveen" },
+    { name = "Maalolan"},
+    { name = "Mukesh"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "numpy>=1.20.0",
+    "demoji>=1.1.0",
+    "gdown>=5.0.0",
+    "tqdm>=4.60.0",
+]
+
+[project.optional-dependencies]
+eval = [
+    "scikit-learn>=1.0.0",
+    "matplotlib>=3.5.0",
+    "pandas>=1.4.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.scripts]
+cyberbully = "cyberbully.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/maal0lan/cyberbully"
+Repository = "https://github.com/maal0lan/cyberbully"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cyberbully*"]

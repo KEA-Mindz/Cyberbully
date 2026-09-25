@@ -1,0 +1,56 @@
+{
+  "model": "distilbert-base-uncased",
+  "max_len": 128,
+  "threshold": 0.22999999999999998,
+  "categories": [
+    "backhanded_compliment",
+    "constructive_criticism",
+    "explicit_insult_clean",
+    "genuine_compliment",
+    "implicit_mockery",
+    "manipulation_gaslighting",
+    "meta_commentary_condemning_bullying",
+    "meta_commentary_condemning_hate",
+    "neutral_statement",
+    "pile_on_mob",
+    "rumor_spreading",
+    "sarcasm_among_friends",
+    "social_exclusion",
+    "supportive_message",
+    "targeted_insult_general",
+    "targeted_insult_identity",
+    "threat",
+    "threat_clean",
+    "topic_opinion_negative",
+    "venting_no_target"
+  ],
+  "class_weights": [
+    0.939310568053083,
+    1.0690734941978264
+  ],
+  "aux_weight": 0.3,
+  "label_source": "category",
+  "args": {
+    "data_paths": [
+      "dataset_generation\\helper_files\\dataset\\generated_dataset\\cyberbullying_merged_dataset.csv"
+    ],
+    "out_dir": "./cyberbully_v0.1_run",
+    "model": "distilbert-base-uncased",
+    "max_len": 128,
+    "batch_size": 16,
+    "grad_accum_steps": 1,
+    "epochs": 4,
+    "lr": 2e-05,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "patience": 2,
+    "aux_weight": 0.3,
+    "label_source": "category",
+    "num_workers": 0,
+    "seed": 42,
+    "prep_only": false,
+    "smoke": false,
+    "resume": false,
+    "predict": null
+  }
+}
