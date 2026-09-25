@@ -1,6 +1,6 @@
 # kea-cyberbully
 
-[![PyPI Version](https://img.shields.io/pypi/v/kea-cyberbully.svg)](https://pypi.org/project/kea-cyberbully/)
+[![PyPI Version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/kea-cyberbully/)
 [![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/kea-cyberbully/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
