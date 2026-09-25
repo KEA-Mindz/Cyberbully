@@ -1,11 +1,12 @@
-# Cyberbully
+# kea-cyberbully
 
+[![PyPI Version](https://img.shields.io/pypi/v/kea-cyberbully.svg)](https://pypi.org/project/kea-cyberbully/)
 [![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/kea-cyberbully/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-orange.svg)](https://huggingface.co/)
 
-Production-grade **Cyberbullying Text Detection** powered by transformer neural networks and multi-task learning.
+Production-grade **Cyberbullying Text Detection** powered by transformer neural networks and nuance-aware multi-task learning. Developed by **KEA MINDZ**.
 
 Designed for social media moderation, chat moderation, comment screening, and trust & safety workflows.
 
@@ -124,13 +125,13 @@ for res in results:
 
 ## Command-Line Interface (CLI)
 
-The package provides a built-in `cyberbully` command:
+The package provides two alias commands: `kea-cyberbully` and `cyberbully`:
 
 ### Classify Single or Multiple Texts
 
 ```bash
-cyberbully "You are a wonderful person"
-cyberbully "Nobody likes you" --threshold 0.30
+kea-cyberbully "You are a wonderful person"
+kea-cyberbully "Nobody likes you" --threshold 0.30
 ```
 
 ### Interactive Mode
@@ -138,25 +139,25 @@ cyberbully "Nobody likes you" --threshold 0.30
 Launch an interactive evaluation console:
 
 ```bash
-cyberbully -i
+kea-cyberbully -i
 ```
 
 ### Batch Processing from CSV or Text Files
 
 ```bash
-cyberbully --file comments.csv --output flagged_results.csv
+kea-cyberbully --file comments.csv --output flagged_results.csv
 ```
 
 ### Check Model Info & Cache
 
 ```bash
-cyberbully --info
+kea-cyberbully --info
 ```
 
 ### Pre-download Model Checkpoint
 
 ```bash
-cyberbully --download
+kea-cyberbully --download
 ```
 
 ---
@@ -176,7 +177,10 @@ The trained checkpoint (`best_model.pt`, ~265MB) is decoupled from the PyPI whee
 ## Repository Structure
 
 ```text
-cyberbully/
+Cyberbully/
+├── .github/
+│   └── workflows/
+│       └── release.yaml          # Automated release & PyPI publishing workflow
 ├── src/
 │   └── cyberbully/               # Core Python package
 │       ├── __init__.py           # Package exports & convenience API
@@ -188,17 +192,12 @@ cyberbully/
 │       └── preprocessing.py      # Adversarial & social media text cleaner
 ├── models/
 │   └── cyberbully_v0.1_run/      # Trained PyTorch model, tokenizer, and config
-├── research/                     # Archived research & experiments
-│   ├── dataset_generation/       # Synthetic dataset generation & word lists
-│   ├── eval_results/             # Evaluation scripts, plots & threshold analysis
-│   ├── notes/                    # Architectural notes & reports
-│   ├── cyberbully_output/        # Legacy Keras training artifacts
-│   └── cyberbully_final.py       # Original training pipeline script
 ├── tests/
 │   ├── test_detector.py          # Pytest suite for model inference
-│   └── test_preprocessing.py   # Unit tests for text normalization
-├── pyproject.toml                # Modern PEP 621 / setuptools packaging
+│   └── test_preprocessing.py     # Unit tests for text normalization
+├── LICENSE                       # MIT License
 ├── MANIFEST.in                   # Packaging exclusions
+├── pyproject.toml                # Modern PEP 621 / setuptools packaging
 ├── requirements.txt              # Environment dependencies
 └── README.md                     # Documentation
 ```
