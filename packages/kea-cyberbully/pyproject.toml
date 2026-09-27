@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kea-cyberbully"
+version = "0.1.1"
+description = "Transitional wrapper package for cyberbully (renamed to cyberbully)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "KEA MINDZ" }
+]
+classifiers = [
+    "Development Status :: 7 - Inactive",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "cyberbully>=0.1.0",
+]
+
+[project.scripts]
+kea-cyberbully = "cyberbully.cli:main"
+cyberbully = "cyberbully.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/KEA-Mindz/Cyberbully"
+Repository = "https://github.com/KEA-Mindz/Cyberbully"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["kea_cyberbully*"]

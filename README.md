@@ -1,7 +1,7 @@
-# kea-cyberbully
+# cyberbully
 
-[![PyPI Version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/kea-cyberbully/)
-[![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/kea-cyberbully/)
+[![PyPI Version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/cyberbully/)
+[![Python Package](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://pypi.org/project/cyberbully/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-orange.svg)](https://huggingface.co/)
@@ -27,7 +27,7 @@ Designed for social media moderation, chat moderation, comment screening, and tr
 ### From PyPI
 
 ```bash
-pip install kea-cyberbully
+pip install cyberbully
 ```
 
 ### From Source / Development
@@ -125,13 +125,13 @@ for res in results:
 
 ## Command-Line Interface (CLI)
 
-The package provides two alias commands: `kea-cyberbully` and `cyberbully`:
+The package provides the `cyberbully` command (with `kea-cyberbully` supported as an alias):
 
 ### Classify Single or Multiple Texts
 
 ```bash
-kea-cyberbully "You are a wonderful person"
-kea-cyberbully "Nobody likes you" --threshold 0.30
+cyberbully "You are a wonderful person"
+cyberbully "Nobody likes you" --threshold 0.30
 ```
 
 ### Interactive Mode
@@ -139,25 +139,25 @@ kea-cyberbully "Nobody likes you" --threshold 0.30
 Launch an interactive evaluation console:
 
 ```bash
-kea-cyberbully -i
+cyberbully -i
 ```
 
 ### Batch Processing from CSV or Text Files
 
 ```bash
-kea-cyberbully --file comments.csv --output flagged_results.csv
+cyberbully --file comments.csv --output flagged_results.csv
 ```
 
 ### Check Model Info & Cache
 
 ```bash
-kea-cyberbully --info
+cyberbully --info
 ```
 
 ### Pre-download Model Checkpoint
 
 ```bash
-kea-cyberbully --download
+cyberbully --download
 ```
 
 ---

@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 env:
-  PACKAGE_NAME: "kea-cyberbully"
+  PACKAGE_NAME: "cyberbully"
   OWNER: "KEA-Mindz"
   REPO_NAME: "Cyberbully"
 
