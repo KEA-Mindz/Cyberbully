@@ -10,8 +10,8 @@ import sys
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_DRIVE_FOLDER = "https://drive.google.com/drive/folders/1J0xiFBJxbwLREqR6WhPzaxd-PyNA28uQ?usp=sharing"
-FALLBACK_DRIVE_FOLDER = "https://drive.google.com/drive/folders/142uQgqE1JsclxDh-DL-ionCB8Flqbf8H?usp=sharing"
+DEFAULT_DRIVE_FOLDER = "https://drive.google.com/drive/folders/1A_hzd_Nw5e38CFO_N4YRz3u8tWhH2HRG"
+FALLBACK_DRIVE_FOLDER = "https://drive.google.com/drive/folders/1A_hzd_Nw5e38CFO_N4YRz3u8tWhH2HRG"
 
 
 def get_default_cache_dir() -> Path:
