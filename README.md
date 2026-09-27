@@ -174,10 +174,10 @@ The trained checkpoint (`best_model.pt`, ~265MB) is decoupled from the PyPI whee
 
 ---
 
-## Repository Structure
+<!-- ## Repository Structure -->
 
-```text
-Cyberbully/
+<!-- ```text -->
+<!-- Cyberbully/
 ├── .github/
 │   └── workflows/
 │       └── release.yaml          # Automated release & PyPI publishing workflow
@@ -202,7 +202,7 @@ Cyberbully/
 └── README.md                     # Documentation
 ```
 
----
+--- -->
 
 ## License
 
